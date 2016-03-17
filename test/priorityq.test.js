@@ -1,9 +1,13 @@
 var assert = require('assert');
-var pq    = require('../src/priorityjs');
+var PriorityQ = require('../src/priorityq');
 
 describe('priority queue', function() {
 	describe('construction', function() {
-		it('when you initialise a priority queue it should be empty');
+		it('when you initialise a priority queue it should be empty', function() {
+			var pq = new PriorityQ();
+			assert.equal(pq.size(), 0);
+			console.log(pq);
+		});
 	});
 	describe('add', function() {
 		it('when you add an item to the queue it should grow by 1');

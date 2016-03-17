@@ -2,7 +2,7 @@
   "name": "priorityjs",
   "version": "0.0.1",
   "description": "a simple priority queue",
-  "main": "src/priorityjs.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
