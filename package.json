@@ -1,0 +1,28 @@
+{
+  "name": "priorityjs",
+  "version": "0.0.1",
+  "description": "a simple priority queue",
+  "main": "src/priorityjs.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erniehs/priorityjs.git"
+  },
+  "keywords": [
+    "priority",
+    "queue"
+  ],
+  "author": "erniehs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erniehs/priorityjs/issues"
+  },
+  "homepage": "https://github.com/erniehs/priorityjs#readme"
+}
