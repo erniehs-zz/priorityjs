@@ -7,11 +7,17 @@ function PriorityQ(comp) {
 }
 
 PriorityQ.prototype.push = function(item) {
-	throw 'not implemented yet';
+	for(var i = 0; i < this.items.length; i++) {
+		if (this.comp(item, this.items[i])) {
+			this.items.splice(i, 0, item);
+			return;
+		}
+	}
+	this.items[i] = item;
 };
 
 PriorityQ.prototype.pop = function() {
-	return this.items.pop();
+	return this.items.shift();
 };
 
 PriorityQ.prototype.peek = function() {
@@ -23,7 +29,7 @@ PriorityQ.prototype.size = function() {
 };
 
 PriorityQ.prototype.clear = function() {
-	this.items.clear();
+	this.items = [];
 };
 
 PriorityQ.prototype.isEmpty = function() {
