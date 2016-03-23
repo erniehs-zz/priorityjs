@@ -1,9 +1,9 @@
 (function(exports) {
 	'use strict';
-	
+
 	function PriorityQ(comp) {
-		if (!comp) {
-			throw 'comparator function required';
+		if (!comp || comp.length != 2) {
+			throw 'a valid comparator function required';
 		}
 		this.comp = comp;
 		this.items = [];

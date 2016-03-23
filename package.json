@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "expect": "^1.16.0",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.0",
     "gulp-mocha": "^2.2.0",
