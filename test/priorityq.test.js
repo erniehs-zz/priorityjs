@@ -14,7 +14,7 @@ describe('priority queue', function() {
 			expect(function(x, y, z){
 				var pq = new queue.PriorityQ();
 			}).toThrow('a valid comparator function required');
-		});	
+		});
 		it('when you initialise a priority queue it should be empty', function() {
 			var pq = new queue.PriorityQ(function(x, y){});
 			assert.equal(pq.size(), 0);
@@ -48,7 +48,7 @@ describe('priority queue', function() {
 			pq.push(8);
 			assert.equal(pq.pop(), 2);
 			assert.equal(pq.pop(), 4);
-			assert.equal(pq.pop(), 8);	
+			assert.equal(pq.pop(), 8);
 		});
 	});
 	describe('peek', function() {
@@ -72,7 +72,7 @@ describe('priority queue', function() {
 			pq.push(4);
 			pq.push(2);
 			pq.push(-1);
-			assert.equal(pq.peek(), -1);		
+			assert.equal(pq.peek(), -1);
 		});
 	});
 	describe('clear', function() {
