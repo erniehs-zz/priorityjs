@@ -1,1 +1,1 @@
-module.exports = require('src/priorityq');
+module.exports = require('./lib/priorityq');

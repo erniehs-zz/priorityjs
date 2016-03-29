@@ -4,7 +4,7 @@ var mocha  = require('gulp-mocha');
 
 gulp.task('lint', function() {
   return gulp
-    .src(['gulpfile.js', 'src/*.js', 'test/*.js'])
+    .src(['gulpfile.js', 'lib/*.js', 'test/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
@@ -16,7 +16,7 @@ gulp.task('test', function() {
 });
 
 gulp.task('default', ['lint', 'test'], function() {
-  gulp.watch(['src/*.js', 'test/*.js'], function() {
+  gulp.watch(['lib/*.js', 'test/*.js'], function() {
     gulp.run('lint', 'test');
   });
 });
