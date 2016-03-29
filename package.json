@@ -1,6 +1,6 @@
 {
   "name": "priorityjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple priority queue",
   "main": "index.js",
   "directories": {
