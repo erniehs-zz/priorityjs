@@ -2,7 +2,7 @@
 This is a very simple to use javascript implementation of a priority queue.  Use as follows,
 
 ```javascript
-var queue = require('../src/priorityq');
+var queue = require('priorityjs');
 
 var pq = new queue.PriorityQ(function(x, y){ return x < y; });
 pq.push(4);
