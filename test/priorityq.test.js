@@ -1,6 +1,6 @@
 var assert = require('assert');
-var queue = require('../lib/priorityq');
 var expect = require('expect');
+var queue = require('../lib/priorityq');
 
 describe('priority queue', function() {
 	describe('construction', function() {
