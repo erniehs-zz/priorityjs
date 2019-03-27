@@ -8,14 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "expect": "^1.16.0",
-    "gulp": "^3.9.1",
-    "gulp-jshint": "^2.0.0",
-    "gulp-mocha": "^2.2.0",
-    "jshint": "^2.9.1"
+    "mocha": "^6.0.2",
+    "chai": "^4.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
